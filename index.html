@@ -8,16 +8,43 @@
 </head>
 <body>
     <h1 id="title">Survey</h1>
-    <p id="description"></p>
+    <p id="description">Description</p>
     <form id="survey-form">
-        <label id="name-label" for="name">Name <input type="text" name="" id="name" required placeholder="John Doe"></label>
-        <label id="email-label" for="email">Email <input type="email" name="" id="email" required placeholder="username@email.com"></label>
-        <label id="number-label" for="age">Age <input type="number" name="" id="age" required placeholder="Type your age"></label>
-        
+        <label id="name-label" for="name">
+            Name <input type="text" name="" id="name" required placeholder="John Doe">
+        </label>
+        <label id="email-label" for="email">
+            Email <input type="email" name="" id="email" required placeholder="username@email.com">
+        </label>
+        <label id="number-label" for="number">
+            Age <input type="number" name="" id="number" min="18" max="130" required placeholder="+18">
+        </label>
+        <fieldset> 
+            <legend>Sex</legend> 
+                <label for="male">
+                    Male <input type="radio" name="sex" id="male" value="male">
+                </label>
+                <label for="female">
+                    Female <input type="radio" name="sex" id="female" value="female">
+                </label>
+        </fieldset>
+        <select name="dropdown" id="dropdown">Education level
+            <option value="Primary">Primary</option>
+            <option value="University">Bachelor's Degree</option>
+            <option value="PostGraduate">Master's Degree</option>
+        </select>
+        <label for="query1">
+            <input type="checkbox" name="query1" id="query1" value="tech">Halloran
+        </label> 
+        <label for="query1">
+                <input type="checkbox" name="query2" id="query2" value="tech2">Merick
+        </label> 
+        <label id="comments" for="comments">Comments<textarea name="" id="comments" cols="30" rows="10"></textarea></label>
+        <button id="submit" type="submit">Submit</button>
         
         
 
     </form>
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
